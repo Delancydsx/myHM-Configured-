@@ -1,0 +1,351 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "source/Lib/TLibCommon",
+					"jsonFile" : "directory-source.Lib.TLibCommon-Debug-39b08f1faeb85b6cef6c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "source/Lib/TLibCommon",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "source/Lib/TLibCommonAnalyser",
+					"jsonFile" : "directory-source.Lib.TLibCommonAnalyser-Debug-a22b218f1d813a6471a8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "source/Lib/TLibCommonAnalyser",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "source/Lib/TLibDecoder",
+					"jsonFile" : "directory-source.Lib.TLibDecoder-Debug-5d17a21de415c02770cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "source/Lib/TLibDecoder",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "source/Lib/TLibDecoderAnalyser",
+					"jsonFile" : "directory-source.Lib.TLibDecoderAnalyser-Debug-a1e0e5034ae8cd241999.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "source/Lib/TLibDecoderAnalyser",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "source/Lib/TLibEncoder",
+					"jsonFile" : "directory-source.Lib.TLibEncoder-Debug-da242912125b6fe51c96.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "source/Lib/TLibEncoder",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "source/Lib/Utilities",
+					"jsonFile" : "directory-source.Lib.Utilities-Debug-bd33651c7526fa5bf702.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "source/Lib/Utilities",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "source/App/TAppDecoder",
+					"jsonFile" : "directory-source.App.TAppDecoder-Debug-1fe607c66ab0c042c1a0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "source/App/TAppDecoder",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "source/App/TAppDecoderAnalyser",
+					"jsonFile" : "directory-source.App.TAppDecoderAnalyser-Debug-9b5ab28bf0568c345d7e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "source/App/TAppDecoderAnalyser",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "source/App/TAppEncoder",
+					"jsonFile" : "directory-source.App.TAppEncoder-Debug-102e81e22d24c1fc5ba2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "source/App/TAppEncoder",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "source/App/TAppMCTSExtractor",
+					"jsonFile" : "directory-source.App.TAppMCTSExtractor-Debug-1cfb5c08daea2030847a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "source/App/TAppMCTSExtractor",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "source/App/Parcat",
+					"jsonFile" : "directory-source.App.Parcat-Debug-2672880983692363ecf7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "source/App/Parcat",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "source/App/SEIRemovalApp",
+					"jsonFile" : "directory-source.App.SEIRemovalApp-Debug-3f4dae789dce81289291.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "source/App/SEIRemovalApp",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					],
+					"name" : "HM",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 10,
+					"id" : "MCTSExtractor::@f0adc524c2fd21c04503",
+					"jsonFile" : "target-MCTSExtractor-Debug-667840accc84b29f0c1d.json",
+					"name" : "MCTSExtractor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "SEIRemovalApp::@cc0d2f72271c48d583cc",
+					"jsonFile" : "target-SEIRemovalApp-Debug-eef021f2813aa77a657b.json",
+					"name" : "SEIRemovalApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "TAppDecoder::@f3d208910a02505f5d83",
+					"jsonFile" : "target-TAppDecoder-Debug-19e9bea277bad2661fdb.json",
+					"name" : "TAppDecoder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "TAppDecoderAnalyser::@740121acb90beeeaeb62",
+					"jsonFile" : "target-TAppDecoderAnalyser-Debug-1e963ba20f9bf0f823f1.json",
+					"name" : "TAppDecoderAnalyser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "TAppEncoder::@4115d03ca811f77c41f6",
+					"jsonFile" : "target-TAppEncoder-Debug-4ec555a487066fc2fc88.json",
+					"name" : "TAppEncoder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "TLibCommon::@171f82e28f9fb0918721",
+					"jsonFile" : "target-TLibCommon-Debug-7701fd8a9a903642a259.json",
+					"name" : "TLibCommon",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "TLibCommonAnalyser::@eaf064e60c26d4083cd6",
+					"jsonFile" : "target-TLibCommonAnalyser-Debug-0cca1d92919e29961f35.json",
+					"name" : "TLibCommonAnalyser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "TLibDecoder::@6c806980b87987033022",
+					"jsonFile" : "target-TLibDecoder-Debug-3b52c8dc7c6c11efb506.json",
+					"name" : "TLibDecoder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "TLibDecoderAnalyser::@6c6302b2cb8dfc56abe2",
+					"jsonFile" : "target-TLibDecoderAnalyser-Debug-2924e9db82b51e0327a3.json",
+					"name" : "TLibDecoderAnalyser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TLibEncoder::@7ea5a8f25dd0068e7a7f",
+					"jsonFile" : "target-TLibEncoder-Debug-89451150dc600edfe5f6.json",
+					"name" : "TLibEncoder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "Utilities::@22506e0f2c08d681b925",
+					"jsonFile" : "target-Utilities-Debug-97cc2225e3431f98ce48.json",
+					"name" : "Utilities",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "parcat::@77d567c5afdb55d0a664",
+					"jsonFile" : "target-parcat-Debug-5d77646f5a48106006a9.json",
+					"name" : "parcat",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Administrator/Desktop/HM-HM-16.26/out/build/x64-Debug",
+		"source" : "C:/Users/Administrator/Desktop/HM-HM-16.26"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -1,0 +1,266 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "C:/Users/Administrator/Desktop/HM-HM-16.26/bin/ninja/msvc-19.35/x86_64/debug/MCTSExtractor.exe"
+		},
+		{
+			"path" : "C:/Users/Administrator/Desktop/HM-HM-16.26/bin/ninja/msvc-19.35/x86_64/debug/MCTSExtractor.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_compile_options",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"source/App/TAppMCTSExtractor/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 45,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 101,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 102,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc -openmp /WX /wd4996 /MDd /Zi /Ob0 /Od /RTC1"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/EHsc"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Administrator/Desktop/HM-HM-16.26/out/build/x64-Debug/source/App/TAppMCTSExtractor"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/Administrator/Desktop/HM-HM-16.26/source/Lib/TLibCommon/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/Administrator/Desktop/HM-HM-16.26/source/Lib/TLibCommon/.."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/Administrator/Desktop/HM-HM-16.26/source/Lib/TLibCommon/./x86"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/Administrator/Desktop/HM-HM-16.26/source/Lib/TLibCommon/../libmd5"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/Administrator/Desktop/HM-HM-16.26/source/Lib/TLibEncoder/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/Administrator/Desktop/HM-HM-16.26/source/Lib/TLibDecoder/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/Administrator/Desktop/HM-HM-16.26/source/Lib/Utilities/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/Administrator/Desktop/HM-HM-16.26/source/Lib/Utilities/.."
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "TLibEncoder::@7ea5a8f25dd0068e7a7f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Utilities::@22506e0f2c08d681b925"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "TLibCommon::@171f82e28f9fb0918721"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "TLibDecoder::@6c806980b87987033022"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "app"
+	},
+	"id" : "MCTSExtractor::@f0adc524c2fd21c04503",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc -openmp /WX /wd4996 /MDd /Zi /Ob0 /Od /RTC1",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64  /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\Users\\Administrator\\Desktop\\HM-HM-16.26\\lib\\ninja\\msvc-19.35\\x86_64\\debug\\TLibCommon.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\Users\\Administrator\\Desktop\\HM-HM-16.26\\lib\\ninja\\msvc-19.35\\x86_64\\debug\\TLibEncoder.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\Users\\Administrator\\Desktop\\HM-HM-16.26\\lib\\ninja\\msvc-19.35\\x86_64\\debug\\TLibDecoder.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\Users\\Administrator\\Desktop\\HM-HM-16.26\\lib\\ninja\\msvc-19.35\\x86_64\\debug\\Utilities.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\Users\\Administrator\\Desktop\\HM-HM-16.26\\lib\\ninja\\msvc-19.35\\x86_64\\debug\\TLibCommon.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "MCTSExtractor",
+	"nameOnDisk" : "MCTSExtractor.exe",
+	"paths" : 
+	{
+		"build" : "source/App/TAppMCTSExtractor",
+		"source" : "source/App/TAppMCTSExtractor"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				3,
+				4
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source/App/TAppMCTSExtractor/TAppMctsExtCfg.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source/App/TAppMCTSExtractor/TAppMctsExtTop.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source/App/TAppMCTSExtractor/mctsExtmain.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "source/App/TAppMCTSExtractor/TAppMctsExtCfg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "source/App/TAppMCTSExtractor/TAppMctsExtTop.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}
