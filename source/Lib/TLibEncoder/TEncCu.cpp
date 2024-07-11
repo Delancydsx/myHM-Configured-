@@ -766,7 +766,7 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
             if( uiDepth == sps.getLog2DiffMaxMinCodingBlockSize() && doNotBlockPu)
             {
               xCheckRDCostInter( rpcBestCU, rpcTempCU, SIZE_NxN DEBUG_STRING_PASS_INTO(sDebug)   );
-              rpcTempCU->initEstData( uiDepth, iQP, bIsLosslessMode );
+              //rpcTempCU->initEstData( uiDepth, iQP, bIsLosslessMode );
               xCheckRDCostInter1(rpcBestCU, rpcTempCU, SIZE_NxN DEBUG_STRING_PASS_INTO(sDebug));
               rpcTempCU->initEstData(uiDepth, iQP, bIsLosslessMode);
             }
@@ -775,7 +775,7 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
           if(doNotBlockPu)
           {
             xCheckRDCostInter( rpcBestCU, rpcTempCU, SIZE_Nx2N DEBUG_STRING_PASS_INTO(sDebug)  );
-            rpcTempCU->initEstData( uiDepth, iQP, bIsLosslessMode );
+            //rpcTempCU->initEstData( uiDepth, iQP, bIsLosslessMode );
             xCheckRDCostInter1(rpcBestCU, rpcTempCU, SIZE_Nx2N DEBUG_STRING_PASS_INTO(sDebug));
             rpcTempCU->initEstData(uiDepth, iQP, bIsLosslessMode);
             if(m_pcEncCfg->getUseCbfFastMode() && rpcBestCU->getPartitionSize(0) == SIZE_Nx2N )
@@ -786,7 +786,7 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
           if(doNotBlockPu)
           {
             xCheckRDCostInter      ( rpcBestCU, rpcTempCU, SIZE_2NxN DEBUG_STRING_PASS_INTO(sDebug)  );
-            rpcTempCU->initEstData( uiDepth, iQP, bIsLosslessMode );
+            //rpcTempCU->initEstData( uiDepth, iQP, bIsLosslessMode );
             xCheckRDCostInter1(rpcBestCU, rpcTempCU, SIZE_2NxN DEBUG_STRING_PASS_INTO(sDebug));
             rpcTempCU->initEstData(uiDepth, iQP, bIsLosslessMode);
             if(m_pcEncCfg->getUseCbfFastMode() && rpcBestCU->getPartitionSize(0) == SIZE_2NxN)
@@ -1738,28 +1738,28 @@ Void TEncCu::xCheckRDCostInter1(TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, 
     rpcTempCU->setTMctsMvpIsValid(true);
 #endif
 
-#if AMP_MRG
-    rpcTempCU->setMergeAMP(true);
-    m_pcPredSearch->predInterSearch(rpcTempCU, m_ppcOrigYuv[uhDepth], m_ppcPredYuvTemp[uhDepth], m_ppcResiYuvTemp[uhDepth], m_ppcSecYuv[uhDepth] DEBUG_STRING_PASS_INTO(sTest), false, bUseMRG);
-#else
-    m_pcPredSearch->predInterSearch(rpcTempCU, m_ppcOrigYuv[uhDepth], m_ppcPredYuvTemp[uhDepth], m_ppcResiYuvTemp[uhDepth], m_ppcSecYuv[uhDepth]);
-#endif
-
-#if AMP_MRG
-    if (!rpcTempCU->getMergeAMP())
-    {
-        return;
-    }
-#endif
-
-#if MCTS_ENC_CHECK
-    if (m_pcEncCfg->getTMCTSSEITileConstraint() && (!rpcTempCU->getTMctsMvpIsValid()))
-    {
-        return;
-    }
-#endif
-
-    m_pcPredSearch->encodeResAndCalcRdInterCU(rpcTempCU, m_ppcOrigYuv[uhDepth], m_ppcPredYuvTemp[uhDepth], m_ppcResiYuvTemp[uhDepth], m_ppcResiYuvBest[uhDepth], m_ppcSecYuv[uhDepth], false DEBUG_STRING_PASS_INTO(sTest));
+//#if AMP_MRG
+//    rpcTempCU->setMergeAMP(true);
+//    m_pcPredSearch->predInterSearch(rpcTempCU, m_ppcOrigYuv[uhDepth], m_ppcPredYuvTemp[uhDepth], m_ppcResiYuvTemp[uhDepth], m_ppcSecYuv[uhDepth] DEBUG_STRING_PASS_INTO(sTest), false, bUseMRG);
+//#else
+//    m_pcPredSearch->predInterSearch(rpcTempCU, m_ppcOrigYuv[uhDepth], m_ppcPredYuvTemp[uhDepth], m_ppcResiYuvTemp[uhDepth], m_ppcSecYuv[uhDepth]);
+//#endif
+//
+//#if AMP_MRG
+//    if (!rpcTempCU->getMergeAMP())
+//    {
+//        return;
+//    }
+//#endif
+//
+//#if MCTS_ENC_CHECK
+//    if (m_pcEncCfg->getTMCTSSEITileConstraint() && (!rpcTempCU->getTMctsMvpIsValid()))
+//    {
+//        return;
+//    }
+//#endif
+//
+//    m_pcPredSearch->encodeResAndCalcRdInterCU(rpcTempCU, m_ppcOrigYuv[uhDepth], m_ppcPredYuvTemp[uhDepth], m_ppcResiYuvTemp[uhDepth], m_ppcResiYuvBest[uhDepth], m_ppcSecYuv[uhDepth], false DEBUG_STRING_PASS_INTO(sTest));
     m_pcPredSearch->predInterSearch2(rpcTempCU, m_ppcOrigYuv[uhDepth], m_ppcPredYuvTemp[uhDepth], m_ppcResiYuvTemp[uhDepth], m_ppcRecoYuvTemp[uhDepth], m_ppcSecYuv[uhDepth] DEBUG_STRING_PASS_INTO(sTest), false, bUseMRG);
     m_pcPredSearch->encodeResAndCalcRdInterCU(rpcTempCU, m_ppcOrigYuv[uhDepth], m_ppcPredYuvTemp[uhDepth], m_ppcResiYuvTemp[uhDepth], m_ppcResiYuvBest[uhDepth], m_ppcRecoYuvTemp[uhDepth], false DEBUG_STRING_PASS_INTO(sTest));
     rpcTempCU->getTotalCost() = m_pcRdCost->calcRdCost(rpcTempCU->getTotalBits(), rpcTempCU->getTotalDistortion());
